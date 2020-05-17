@@ -12,9 +12,7 @@ $(document).ready(function(){
         } else {
             $('div.amenities > h4').html('&nbsp;');
         }
-    });
-    console.log('Entro');
-    
+    });    
     $.get('http://0.0.0.0:5001/api/v1/status/', (data, textStatus) => {
     if (textStatus === 'success') {
       if (data.status === 'OK') {
